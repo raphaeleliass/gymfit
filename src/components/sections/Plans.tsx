@@ -71,7 +71,7 @@ export function Plans() {
           {plans.map((plan) => (
             <div
               key={plan.name}
-              className={`relative group rounded-2xl p-8 bg-white/5 backdrop-blur-sm
+              className={`relative group flex flex-col items-center justify-between rounded-2xl p-8 bg-white/5 backdrop-blur-sm
                 ${plan.highlighted ? "transform scale-105" : ""}`}
             >
               {/* Efeito de gradiente no hover */}
@@ -81,7 +81,7 @@ export function Plans() {
               />
 
               {/* Conteúdo do card */}
-              <div className="relative z-10">
+              <div className="relative z-10 flex flex-col items-center justify-between h-full w-full">
                 <span className="text-4xl mb-4 block">{plan.icon}</span>
                 <h3 className="text-2xl font-bold font-poppins text-white mb-2">
                   {plan.name}

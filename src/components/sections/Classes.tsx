@@ -1,46 +1,57 @@
-import { Container } from '../ui/Container';
+import { Container } from "../ui/Container";
 
 const classes = [
   {
-    name: 'Musculação',
-    description: 'Treinos personalizados para ganho de força e resistência',
-    image: '/musculacao.jpg',
-    icon: '💪',
-    intensity: 'Alta',
-    duration: '60min',
+    name: "Musculação",
+    description: "Treinos personalizados para ganho de força e resistência",
+    image:
+      "https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    icon: "💪",
+    intensity: "Alta",
+    duration: "60min",
   },
   {
-    name: 'CrossFit',
-    description: 'Treinos intensos e dinâmicos para melhorar condicionamento físico',
-    image: '/crossfit.jpg',
-    icon: '🏋️‍♂️',
-    intensity: 'Muito Alta',
-    duration: '45min',
+    name: "CrossFit",
+    description:
+      "Treinos intensos e dinâmicos para melhorar condicionamento físico",
+    image:
+      "https://images.pexels.com/photos/1552108/pexels-photo-1552108.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    icon: "🏋️‍♂️",
+    intensity: "Muito Alta",
+    duration: "45min",
   },
   {
-    name: 'Yoga',
-    description: 'Aulas para relaxamento, flexibilidade e equilíbrio',
-    image: '/yoga.jpg',
-    icon: '🧘‍♀️',
-    intensity: 'Moderada',
-    duration: '50min',
+    name: "Yoga",
+    description: "Aulas para relaxamento, flexibilidade e equilíbrio",
+    image:
+      "https://images.pexels.com/photos/35987/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    icon: "🧘‍♀️",
+    intensity: "Moderada",
+    duration: "50min",
   },
   {
-    name: 'Dança',
-    description: 'Aulas divertidas para queimar calorias e melhorar a coordenação',
-    image: '/danca.jpg',
-    icon: '💃',
-    intensity: 'Média',
-    duration: '55min',
+    name: "Dança",
+    description:
+      "Aulas divertidas para queimar calorias e melhorar a coordenação",
+    image:
+      "https://images.pexels.com/photos/864990/pexels-photo-864990.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    icon: "💃",
+    intensity: "Média",
+    duration: "55min",
   },
 ];
 
 export function Classes() {
   return (
-    <section id="classes" className="py-20 bg-gradient-to-br from-gray-900/95 to-gray-900">
+    <section
+      id="classes"
+      className="py-20 bg-gradient-to-br from-gray-900/95 to-gray-900"
+    >
       <Container>
         <div className="text-center mb-16">
-          <span className="text-primary text-lg font-semibold">Nossas Atividades</span>
+          <span className="text-primary text-lg font-semibold">
+            Nossas Atividades
+          </span>
           <h2 className="text-4xl font-bold font-poppins text-white mt-2 mb-4">
             Aulas Energizantes
           </h2>
@@ -64,9 +75,7 @@ export function Classes() {
                 <h3 className="text-2xl font-bold font-poppins text-white mb-2">
                   {classItem.name}
                 </h3>
-                <p className="text-gray-300 mb-4">
-                  {classItem.description}
-                </p>
+                <p className="text-gray-300 mb-4">{classItem.description}</p>
                 <div className="flex justify-between text-sm">
                   <span className="text-primary font-semibold">
                     {classItem.duration}

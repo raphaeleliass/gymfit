@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme {
+  --font-permanent-marker: "Permanent Marker";
+  --font-oswald: "Oswald";
+  --font-poppins: "Poppins";
+
+  --color-primary: #ff4b2b;
+  --color-secondary: #1e40af;
+  --color-accent: #22c55e;
+  --color-dark: #1f2937;
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  body {
+    @apply antialiased font-oswald;
+  }
+}
